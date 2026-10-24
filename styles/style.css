@@ -131,10 +131,9 @@ ol {
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 16.2px;
-  white-space: nowrap;     
-  overflow: hidden;        
-  text-overflow: ellipsis;  
+  line-height: 16.2px;  
+  line-clamp: 4;
+  overflow: hidden;      
   width: 196px;     
 }
 .visually-hidden {
