@@ -132,8 +132,10 @@ ol {
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
-  line-clamp: 4;
-  overflow: hidden;
+  white-space: nowrap;     
+  overflow: hidden;        
+  text-overflow: ellipsis;  
+  width: 196px;     
 }
 .visually-hidden {
   position: absolute;
@@ -209,12 +211,12 @@ ol {
   border: 1px solid currentColor;
   color: #fff;
   cursor: pointer;
+  height: 34px;
 }
 .button:hover {
   text-decoration: underline;
 }
 .button:active {
-  outline: 1px solid #fff;
   background-color: #545050;
 }
 .button:focus {
@@ -226,13 +228,11 @@ ol {
 }
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
   align-self: end;
 
 }
 .more-button {
   width: 390px;
-  min-height: 34px;
   margin-top: 30px;
 }
 .content__card-link_current {
