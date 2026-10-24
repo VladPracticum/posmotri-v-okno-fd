@@ -28,12 +28,10 @@ html {
   align-items: center;  
 }
 .search-form {
-  display: flex;
-  flex-direction: row; 
-  justify-content: space-between; 
-  align-items: flex-start;
+  justify-content: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
-
 }
 .content__list-container {
   height: 298px;
@@ -50,14 +48,13 @@ html {
   display: grid;
   width: 100%;
   height: 100%;
-  gap: 30px;
+  gap: 25px;
 }
 .result__video-container {
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
   position: relative;
-  gap: 30px;
 }
 .result__video {
   object-fit: cover;
@@ -106,7 +103,7 @@ html {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
-  line-height: 100px;
+  line-height: 30px;
   text-transform: uppercase;
   line-clamp: 1;
 }
@@ -140,7 +137,6 @@ html {
   flex-direction: row;
   align-items: center;
   width: fit-content;
-  gap: 15px;
   cursor: pointer;
 }
 .search-form__textfield:focus {
