@@ -53,6 +53,7 @@ ol {
   height: 298px;
   overflow: auto;
   position: relative;
+  margin-bottom: 16px;
 }
 .result {
   align-self: end;
@@ -75,7 +76,9 @@ ol {
   height: 100%;
 }
 .content__list {
-  gap: 30px
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
 }
 .content__video-card {
   display: flex;
@@ -199,8 +202,8 @@ ol {
   content: "";
   display: none;
   background-color: white;
-  width: 100%;
-  height: 100%;
+  width: 15px;
+  height: 15px;
 }
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   display: block;
@@ -260,6 +263,7 @@ ol {
 .content__list-item {
   padding-left: 3px;
   padding-right: 3px;
+  display: block;
 }
 .search-form__checkbox {
   cursor: pointer;
